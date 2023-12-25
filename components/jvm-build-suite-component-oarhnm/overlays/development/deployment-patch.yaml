@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-oarhnm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-lyaz-tenant/jvm-build-suite-application-pvno/jvm-build-suite-component-oarhnm@sha256:2909a166c38cab4230029d58b99aff96aae78adc97baeff6667ab9d7d1c4c37e
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
